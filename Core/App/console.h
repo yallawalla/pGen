@@ -43,3 +43,5 @@ enum dbg {
 #endif
 #define SW_version 100
 void	printVersion(void);
+
+extern TIM_HandleTypeDef htim1;

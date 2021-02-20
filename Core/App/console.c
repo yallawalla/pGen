@@ -234,6 +234,10 @@ char	*c;
 				case __CtrlY:																		// call system reset
 					NVIC_SystemReset();	
 				
+				case __Esc:
+					__HAL_TIM_ENABLE(&htim1);
+				break;
+				
 				default:
 					c=cgets(i,EOF);				
 					if(c) {		
